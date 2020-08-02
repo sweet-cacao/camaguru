@@ -1,0 +1,2 @@
+# camaguru
+Kind of instagram
