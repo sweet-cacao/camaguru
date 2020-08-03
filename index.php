@@ -2,7 +2,7 @@
 	require_once("rend.php");
 	
 	$header = new Render(array("html" => "header.html", "param" => array("first" => "Login", "second" => "Register", "third" => "About")));
-	$main = new Render(array("html" => "main.html", "param" => array()));
+	$main = new Render(array("html" => "main.html"));
 	echo $header->getHtml();
 	echo $main->getHtml();
 

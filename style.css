@@ -2,7 +2,7 @@ body
 {
     background-color: black;
     color: red;
-    
+    font-size: 2em;
 }
 .login
 {
@@ -10,7 +10,38 @@ body
 }
 .header
 {
-    size: 20em;
+
     display: flex;
     flex-direction: row;
+}
+
+/* Camaguru */
+.menu:first-of-type
+{
+    margin-left: 0.2em;
+    margin-right: 1.5em;
+}
+
+/* Menu */
+.menu
+{
+    
+    font-size: 200%;
+    margin-right: 0.5em;
+}
+.menu:hover
+{
+    color: black;
+}
+.menu:nth-child(2):hover
+{
+    background-color:yellow;
+}
+.menu:nth-child(3):hover
+{
+    background-color:blue;
+}
+.menu:nth-child(4):hover
+{
+    background-color:green;
 }
