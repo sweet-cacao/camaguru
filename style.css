@@ -3,6 +3,7 @@ body
     background-color: black;
     color: red;
     font-size: 2em;
+    overflow: hidden;
 }
 .login
 {
@@ -45,3 +46,90 @@ body
 {
     background-color:green;
 }
+
+/* Register staff */
+.rocket
+{
+    height: 100px;
+    width: 100px;
+    /* background-color: blanchedalmond; */
+    /* background-image: url("./img/rocket2.webp"); */
+    /* background-repeat: repeat; */
+    /* margin-top: 300px;
+    margin-left: 300px; */
+
+}
+
+.rocket1{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-380%, 450%);
+    height: 200px;
+    width: auto;
+    animation: fly1 9s infinite;
+    animation-direction: reverse;
+  }
+
+  .rocket2{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(180%, 450%);
+    height: 200px;
+    width: auto;
+    animation: fly2 9s infinite;
+    animation-direction: reverse;
+    animation-delay: 5s;
+  }
+
+  @keyframes fly1{
+    0%
+    {
+      transform: translate(-380%, -450%);
+    }
+}
+  @keyframes fly2{
+      0%
+      {
+        transform: translate(180%, -450%);
+      }
+  }
+  @keyframes circle{
+    0%{
+      transform:rotate(0deg)
+                translate(-165px)
+                rotate(0deg);
+    
+    }
+    100%{
+      transform:rotate(360deg)
+                translate(-165px)
+                rotate(-360deg);
+    }
+  }
+
+  .earth{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(70%, -250%);
+    height: 200px;
+    width: auto;
+    animation: circle 9s linear infinite;
+    /* animation-direction: reverse; */
+  }
+
+  .mars{
+
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(70%, -250%);
+    height: 200px;
+    width: auto;
+    animation: circle 9s cubic-bezier(0.3, 0.27, 0.07, 1.64) infinite;
+    animation-delay: 2s;
+    /* animation-direction: reverse; */
+  }
+  
