@@ -98,22 +98,28 @@ body
   @keyframes circle{
     0%{
       transform:rotate(0deg)
-                translate(-165px)
+                translate(200px, -265px)
                 rotate(0deg);
     
     }
     100%{
-      transform:rotate(360deg)
-                translate(-165px)
-                rotate(-360deg);
+      transform:rotate(-360deg)
+                translate(200px, -300px)
+                rotate(360deg);
     }
   }
 
+  #planet
+  {
+    top: 10%;
+    left: 90%;
+    
+  }
   .earth{
     position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(70%, -250%);
+    /* top: 10%;
+    left: 90%; */
+    transform: translate(200%, -300%);
     height: 200px;
     width: auto;
     animation: circle 9s linear infinite;
@@ -121,15 +127,201 @@ body
   }
 
   .mars{
+    position:absolute;
+    /* top: 10%;
+    left: 90%; */
+    transform: translate(200%, 165%);
+    height: 200px;
+    width: auto;
+    animation: circle 9s linear infinite;
+    animation-delay: 4s;
+    /* animation-direction: reverse; */
+  }
+
+  .uran
+  {
+    position:absolute;
+    /* top: 10%;
+    left: 90%; */
+    transform: translate(200%, 165%);
+    height: 200px;
+    width: auto;
+    animation: circle 9s linear infinite;
+    animation-delay: 2s;
+    /* animation-direction: reverse; */
+  }
+
+  .hot
+  {
+    position:absolute;
+    /* top: 10%;
+    left: 90%; */
+    transform: translate(200%, 165%);
+    height: 150px;
+    width: auto;
+    animation: circle 9s linear infinite;
+    animation-delay: 6s;
+    /* animation-direction: reverse; */
+  }
+
+
+  @keyframes shadowAnim {
+		10%
+		{
+			box-shadow: 0 0 10px #fff,
+					 0 0 20px #fff,
+					 0 0 30px #fff,
+					 0 0 40px #e600c8,
+					 0 0 70px #e600c8,
+					 0 0 80px #e600c8,
+					 0 0 100px #e600c8,
+					 0 0 150px #e600c8;
+		}
+		20%
+		{
+			box-shadow: 0 0 10px #fff,
+					 0 0 20px #fff,
+					 0 0 30px #fff,
+					 0 0 40px #d200b7,
+					 0 0 70px #d200b7,
+					 0 0 80px #d200b7,
+					 0 0 100px #d200b7,
+					 0 0 150px #d200b7;
+		}
+		30%
+		{
+			box-shadow: 0 0 10px #fff,
+						 0 0 20px #fff,
+						 0 0 30px #fff,
+						 0 0 40px #bf00a6,
+						 0 0 70px #bf00a6,
+						 0 0 80px #bf00a6,
+						 0 0 100px #bf00a6,
+						 0 0 150px #bf00a6;
+		}
+		40%
+		{
+			box-shadow: 0 0 10px #fff,
+					 0 0 20px #fff,
+					 0 0 30px #fff,
+					 0 0 40px #ab0095,
+					 0 0 70px #ab0095,
+					 0 0 80px #ab0095,
+					 0 0 100px #ab0095,
+					 0 0 150px #ab0095;
+		}
+		50%
+		{
+			box-shadow: 0 0 10px #ffe6fc,
+					 0 0 20px #ffe6fc,
+					 0 0 30px #ffe6fc,
+					 0 0 40px #980084,
+					 0 0 70px #980084,
+					 0 0 80px #980084,
+					 0 0 100px #980084,
+					 0 0 150px #980084;
+		}
+		60%
+		{
+			box-shadow: 0 0 10px #ffe6fc,
+						 0 0 20px #ffe6fc,
+						 0 0 30px #ffe6fc,
+						 0 0 40px #840073,
+						 0 0 70px #840073,
+						 0 0 80px #840073,
+						 0 0 100px #840073,
+						 0 0 150px #840073;
+		}
+		70%
+		{
+			box-shadow: 0 0 10px #ffbff7,
+					 0 0 20px #ffbff7,
+					 0 0 30px #ffbff7,
+					 0 0 40px #700062,
+					 0 0 70px #700062,
+					 0 0 80px #700062,
+					 0 0 100px #700062,
+					 0 0 150px #700062;
+		}
+		80%
+		{
+			box-shadow: 0 0 10px #ffbff7,
+					 0 0 20px #ffbff7,
+					 0 0 30px #ffbff7,
+					 0 0 40px #5d0051,
+					 0 0 70px #5d0051,
+					 0 0 80px #5d0051,
+					 0 0 100px #5d0051,
+					 0 0 150px #5d0051;
+		}
+		90%
+		{
+    
+			box-shadow: 0 0 10px #ffabf4,
+						 0 0 20px #ffabf4,
+						 0 0 30px #ffabf4,
+						 0 0 40px #490040,
+						 0 0 70px #490040,
+						 0 0 80px #490040,
+						 0 0 100px #490040,
+						 0 0 150px #490040;
+		}
+		100%
+		{
+			box-shadow: 0 0 10px #ff98f2,
+						 0 0 20px #ff98f2,
+						 0 0 30px #ff98f2,
+						 0 0 40px #35002e,
+						 0 0 70px #35002e,
+						 0 0 80px #35002e,
+						 0 0 100px #35002e,
+						 0 0 150px #35002e;
+		}
+}
+
+.d1 {
+  position: absolute;
+  /* top:50%;
+  left: 50%; */
+  width: 5px; 
+  height: 5px;
+  background: yellow;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #fff,
+  0 0 20px #fff,
+  0 0 30px #fff,
+  0 0 40px #ff00de,
+  0 0 70px #ff00de,
+  0 0 80px #ff00de,
+  0 0 100px #ff00de,
+            0 0 150px #ff00de;
+  animation-name: shadowAnim;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  }
+
+
+  .star
+  {
 
     position:absolute;
     top: 50%;
     left: 50%;
-    transform: translate(70%, -250%);
+    transform: translate(200%, -300%);
     height: 200px;
     width: auto;
-    animation: circle 9s cubic-bezier(0.3, 0.27, 0.07, 1.64) infinite;
-    animation-delay: 2s;
-    /* animation-direction: reverse; */
+
+  }
+
+  .meteo
+  {
+    position:absolute;
+    top: 50%;
+    left: 10%;
+
+    height: 200px;
+    width: auto;
+
   }
   

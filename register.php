@@ -7,4 +7,18 @@
     echo $header->getHtml();
     echo $register->getHtml();
     echo $footer->getHtml();
+    for ($i = 1; $i <= 100; $i++) {
+        $top = "70%";
+        $left = "70%";
+        echo '<img style = "top: '.  rand(10, 100).'%; left: ', rand(10, 100). '%;"'
+
+         .' class = '.'"d1">'.'</div>';
+    }
+    // while(1) {
+    //     $top = "70%";
+    //     $left = "70%";
+    //     echo '<img style = "top: '.  rand(10, 100).'%; left: ', rand(10, 100). '%;"'
+
+    //      .' class = '.'"d1">'.'</div>';
+    // }
 ?>
